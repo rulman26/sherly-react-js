@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+header {
+    overflow: hidden;
+    background: white;
+    background: linear-gradient(90deg, white 15%, #0ad9f1 55%);
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    position: sticky;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.logo_index {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.nav-item{
+    margin: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-item:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #FFF;
+}
