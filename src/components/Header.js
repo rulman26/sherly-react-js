@@ -4,45 +4,47 @@ import './Header.css'
 const Header = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light-nav">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="index.html">
-                        <Link to="/">
-                            <img className="logo_index" src="https://sherlyferro.github.io/sass-example/img/logo%20oficial.png" />
-                        </Link>
-                    </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link to="/nosotros">
-                                    <a className="nav-link" aria-current="page">Nosotros</a>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/pacientes">
-                                    <a className="nav-link" aria-current="page">Nuestros pacientes</a>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/tratamientos">
-                                    <a className="nav-link" aria-current="page">Tratamientos</a>
-                                </Link>
-
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/sedes">
-                                    <a className="nav-link" aria-current="page">Sedes</a>
-                                </Link>
-                            </li>
-                        </ul>
+            <div className="fixed-top">
+                <div className="container-fluid bg--transparent">
+                    <div className="d-flex justify-content-center pt-3">
+                        <div className="logo">
+                        </div>
                     </div>
+                    <nav className="navbar navbar-expand-sm navbar-light">
+                        <div className="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse text-center" id="navbarsExample11">
+                                <ul className="navbar-nav">
+                                    <li className="nav-item">
+                                        <Link to="/">
+                                            <a className="menu--link" >INICIO</a>
+                                        </Link>
+
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/relojes">
+                                            <a className="menu--link">RELOJES</a>
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/joyas">
+                                            <a className="menu--link">JOYAS</a>
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/accesorios">
+                                            <a className="menu--link">ACCESORIOS</a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </header>
     )
 }

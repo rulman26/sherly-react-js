@@ -1,28 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-header {
-    overflow: hidden;
-    background: white;
-    background: linear-gradient(90deg, white 15%, #0ad9f1 55%);
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    position: sticky;
+.logo {
+    height: 48px;
+    width: 94px;
+    background: url("https://cdn.shopify.com/s/files/1/0274/8838/7170/files/gyg-blanco-chico_100x.png?v=1614329309") no-repeat;
+}
+
+.menu--link {
+    margin: 6px 32px;
     font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    transition: color .2s ease-in-out;
+    letter-spacing: .2em;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
 }
 
-.logo_index {
-    width: 70px;
-    height: 70px;
-    margin-left: 10px;
-    border-radius: 10px;
+.menu--link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:
+        #2e2e2e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
-.nav-item{
-    margin: 16px;
-    font-size: 18px;
-    font-weight: 600;
+.menu--link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
-.nav-item:hover {
-    transform: scale(1.1);
-    border-bottom: 2px solid #FFF;
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg--transparent {
+    background-color: #000;
+    opacity: 0.9;
+    transition: all ease 0.9s;
+}
+
+.bg--transparent:hover {
+    background-color: #FFF;
+    color: #000;
+    opacity: 0.99;
+    transition: all ease 0.9s;
+}
+
+.bg--transparent:hover .menu--link {
+    transition: all ease 0.09s;
+    color: #000;
+    
+}
+
+.bg--transparent:hover .logo {
+    transition: all ease 0.9s;
+    background: url("https://cdn.shopify.com/s/files/1/0274/8838/7170/files/gyg-negro-chico_100x.png?v=1614329309") no-repeat;
+}
+
+header{
+    margin-bottom: 116px;
 }

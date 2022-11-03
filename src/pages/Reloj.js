@@ -1,10 +1,10 @@
 
-const Nosotros = () => {
+const Reloj = () => {
     return (
         <div>
             <div className="container-fluid p-5 bg-primary text-white text-center">
-                <h1>NOSOTROS</h1>
-                <p>Resize this responsive page to see the effect!</p>
+                <h1>RELOJES</h1>
+                <p>Encuentra tus productos a un super precio!</p>
             </div>
 
             <div className="container mt-5">
@@ -31,4 +31,4 @@ const Nosotros = () => {
 }
 
 
-export default Nosotros
+export default Reloj
