@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import './Header.css'
+import './Navbar.css'
 
-const Header = () => {
+const Navbar = () => {
     return (
         <header>
             <div className="fixed-top">
@@ -22,7 +22,6 @@ const Header = () => {
                                         <Link to="/">
                                             <a className="menu--link" >INICIO</a>
                                         </Link>
-
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/relojes">
@@ -50,4 +49,4 @@ const Header = () => {
 }
 
 
-export default Header
+export default Navbar

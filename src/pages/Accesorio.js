@@ -2,12 +2,12 @@ import { useState, useEffect } from "react"
 import ItemList from "../components/ItemList"
 import api from '../api';
 
-const ItemListContainer = () => {
+const Accesorio = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
         let load = new Promise((res) => {
             setTimeout(() => {
-                res(api.products)
+                res(api.products.filter( x=> x.category === "accesorio"))
             }, 2000);
         })
         load.then((respuesta) => { setProducts(respuesta) }).catch((error) => {
@@ -17,8 +17,8 @@ const ItemListContainer = () => {
     return (
         <main>
             <div className="container-fluid p-5 bg-primary text-white text-center">
-                <h1>TODOS LOS PRODUCTIS</h1>
-                <p>Encuentra tus productos a un super precio!</p>
+                <h1>ACCESORIOS</h1>
+                <p>Encuentra tus accesorios a un super precio!</p>
             </div>
             <div className="container mt-3">
 
@@ -29,4 +29,4 @@ const ItemListContainer = () => {
 }
 
 
-export default ItemListContainer
+export default Accesorio
